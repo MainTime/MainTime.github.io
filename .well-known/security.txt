@@ -1,1 +1,21 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
 
+Contact: ytmaintime@gmail.com
+Encryption: https://maintime.github.io/.well-known/encryption.txt
+Preferred-Languages: en, de
+Canonical: https://maintime.github.io/.well-known/security.txt
+Policy: https://maintime.github.io/.well-known/policy.txt
+-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v2.6.2
+Comment: https://openpgpjs.org
+
+wsBcBAEBCAAQBQJepWFwCRC05qFc7pKzcwAAwgMH/iNi9IVBJmoTRzVVfPS5
+ktf9t+cbe9CM3t2lsMe3ue97Q22ZDvHC1u/BtZD8QXRSLXxV4Z5ZeFZJGxH8
+Zi86tgj9wkLSK2VChLIMpaljp36UyJCDL6Bem9IIEhn51a4n1+7/SthLPFa6
+4OYW1RZdsN32ia+FWadZFCBr2px8iZbQ0Oq19hzXfDsxwlFHsay8nevd6kwJ
+gkaYmVFbL0vYGqy827xxjzs5bQw4rk0vhUgxaYb2Aun9NFs9pgjCvSndj7Pw
+HBFxqhHYUeiFdY0HgBYubIBpHRPnkbaxwHJeD3VBWft2cZ63TOEXF6Lm0aNQ
+c7q1i5koeB8LywQtNyUPrJk=
+=Gmqn
+-----END PGP SIGNATURE-----
