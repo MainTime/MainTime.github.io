@@ -83,9 +83,9 @@ x = setInterval(function () {
   distance = countDown - now;
    
   if (Math.floor(distance / day) == 1) {
-      document.getElementById('daysT').innerText = 'Tag'
+      document.getElementById('daysT').value = 'Tag'
   } else {
-      document.getElementById('daysT').innerText = 'Tage'
+      document.getElementById('daysT').value = 'Tage'
   }
   
   if (Math.floor(distance % day / hour) == 1) {
