@@ -64,10 +64,10 @@ body {
 <div class="container">
 <h1>Annes Geburtstags Countdown:</h1>
 <ul>
-<li><span id="days">0</span>Tage</li>
-<li><span id="hours">0</span>Stunden</li>
-<li><span id="minutes">0</span>Minuten</li>
-<li><span id="seconds">0</span>Sekunden</li>
+<li id="daysT"><span id="days">0</span>Tage</li>
+<li id="hoursT"><span id="hours">0</span>Stunden</li>
+<li id="minutesT"><span id="minutes">0</span>Minuten</li>
+<li id="secondsT"><span id="seconds">0</span>Sekunden</li>
 </ul>
 </div>
 <script>
@@ -81,14 +81,40 @@ x = setInterval(function () {
 
   let now = new Date().getTime(),
   distance = countDown - now;
-
+   
+  if (Math.floor(distance / day) = 1) {
+      document.getElementById('daysT').innerText = 'Tag'
+  } else {
+      document.getElementById('daysT').innerText = 'Tage'
+  }
+  
+  if (Math.floor(distance % day / hour) = 1) {
+      document.getElementById('hoursT').innerText = 'Tag'
+  } else {
+      document.getElementById('hoursT').innerText = 'Tage'
+  }
+  
+  if (Math.floor(distance % hour / minute) = 1) {
+      document.getElementById('minutesT').innerText = 'Tag'
+  } else {
+      document.getElementById('minutesT').innerText = 'Tage'
+  }
+   
+  if (Math.floor(distance % minute / second) = 1) {
+      document.getElementById('secondsT').innerText = 'Tag'
+  } else {
+      document.getElementById('secondsT').innerText = 'Tage'
+  }
   document.getElementById('days').innerText = Math.floor(distance / day),
   document.getElementById('hours').innerText = Math.floor(distance % day / hour),
   document.getElementById('minutes').innerText = Math.floor(distance % hour / minute),
   document.getElementById('seconds').innerText = Math.floor(distance % minute / second);
 
+  
+  
   //do something later when date is reached
   if (distance < 0) {
+     
       document.getElementById('days').innerText = '',
       document.getElementById('hours').innerText = 'HAPPY',
       document.getElementById('minutes').innerText = 'BIRTHDAY',
