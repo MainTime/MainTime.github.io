@@ -82,29 +82,6 @@ x = setInterval(function () {
   let now = new Date().getTime(),
   distance = countDown - now;
    
-  if (Math.floor(distance / day) == 1) {
-      document.getElementById('daysT').value = 'Tag'
-  } else {
-      document.getElementById('daysT').value = 'Tage'
-  }
-  
-  if (Math.floor(distance % day / hour) == 1) {
-      document.getElementById('hoursT').innerText = 'Tag'
-  } else {
-      document.getElementById('hoursT').innerText = 'Tage'
-  }
-  
-  if (Math.floor(distance % hour / minute) == 1) {
-      document.getElementById('minutesT').innerText = 'Tag'
-  } else {
-      document.getElementById('minutesT').innerText = 'Tage'
-  }
-   
-  if (Math.floor(distance % minute / second) == 1) {
-      document.getElementById('secondsT').innerText = 'Tag'
-  } else {
-      document.getElementById('secondsT').innerText = 'Tage'
-  }
   document.getElementById('days').innerText = Math.floor(distance / day),
   document.getElementById('hours').innerText = Math.floor(distance % day / hour),
   document.getElementById('minutes').innerText = Math.floor(distance % hour / minute),
