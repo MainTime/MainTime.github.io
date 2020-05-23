@@ -83,27 +83,27 @@ x = setInterval(function () {
   distance = countDown - now;
    
   if (Math.floor(distance / day) == 1) {
-      document.getElementById('daysT').innerHTML = 'Tag'
+      document.getElementById('daysT').innerText = 'Tag'
   } else {
-      document.getElementById('daysT').innerHTML = 'Tage'
+      document.getElementById('daysT').innerText = 'Tage'
   }
   
   if (Math.floor(distance % day / hour) == 1) {
-      document.getElementById('hoursT').innerHTML = 'Tag'
+      document.getElementById('hoursT').innerText = 'Tag'
   } else {
-      document.getElementById('hoursT').innerHTML = 'Tage'
+      document.getElementById('hoursT').innerText = 'Tage'
   }
   
   if (Math.floor(distance % hour / minute) == 1) {
-      document.getElementById('minutesT').innerHTML = 'Tag'
+      document.getElementById('minutesT').innerText = 'Tag'
   } else {
-      document.getElementById('minutesT').innerHTML = 'Tage'
+      document.getElementById('minutesT').innerText = 'Tage'
   }
    
   if (Math.floor(distance % minute / second) == 1) {
-      document.getElementById('secondsT').innerHTML = 'Tag'
+      document.getElementById('secondsT').innerText = 'Tag'
   } else {
-      document.getElementById('secondsT').innerHTML = 'Tage'
+      document.getElementById('secondsT').innerText = 'Tage'
   }
   document.getElementById('days').innerText = Math.floor(distance / day),
   document.getElementById('hours').innerText = Math.floor(distance % day / hour),
